@@ -34,7 +34,7 @@ spec:
     schedule: "0 4 * * *"
   pxc:
     size: 3
-    image: percona/percona-xtradb-cluster:8.0.21-12.1
+    image: perconalab/percona-xtradb-cluster-operator:marce1-pxc8.0
     autoRecovery: true
 #    schedulerName: mycustom-scheduler
 #    readinessDelaySec: 15
