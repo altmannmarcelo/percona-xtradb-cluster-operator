@@ -543,4 +543,4 @@ if [ "$1" = 'mysqld' -a -z "$wantHelp" ]; then
 	fi
 fi
 
-exec "$@" $wsrep_start_position_opt
+exec rr record -o /tmp/rr_$(date +"%Y_%m-%d_%H_%M_%S") "$@" $wsrep_start_position_opt
